@@ -1,0 +1,66 @@
+.guide-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .guide-title {
+    font-size: 32px;
+    text-align: center;
+    color: #b7791f;
+    margin-bottom: 40px;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 0 0 5px #fcd34d; }
+    to { text-shadow: 0 0 15px #fcd34d; }
+  }
+  
+  .section-card {
+    background: linear-gradient(to right, #fff7d1, #ffffff);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .section-icon {
+    color: #f59e0b;
+  }
+  
+  .section-content p,
+  .section-content ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .section-content ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  details {
+    margin-bottom: 12px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 6px;
+  }
+  
