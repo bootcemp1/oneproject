@@ -8,6 +8,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Link bosilganda menyuni yopish
+  };
+
   return (
     <div className="container">
       <nav className="navbar">
@@ -21,19 +25,19 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Bosh Sahifa</Link>
+            <Link to="/" onClick={handleLinkClick}>Bosh Sahifa</Link>
           </li>
           <li>
-            <Link to="/turistik-manzillar">Turistik manzillar</Link>
+            <Link to="/turistik-manzillar" onClick={handleLinkClick}>Turistik manzillar</Link>
           </li>
           <li>
-            <Link to="/qollanma">Qo'llanma</Link>
+            <Link to="/qollanma" onClick={handleLinkClick}>Qo'llanma</Link>
           </li>
           <li>
-            <Link to="/biz-haqimizda">Biz Haqimizda</Link>
+            <Link to="/biz-haqimizda" onClick={handleLinkClick}>Biz Haqimizda</Link>
           </li>
           <li>
-            <Link to="/biz-bilan-aloqa">Biz bilan aloqa</Link>
+            <Link to="/biz-bilan-aloqa" onClick={handleLinkClick}>Biz bilan aloqa</Link>
           </li>
         </ul>
       </nav>
