@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -15,11 +16,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-title">Sahifalar</h3>
           <ul className="footer-links">
-            <li><a href="/">Bosh sahifa</a></li>
-            <li><a href="/turistik-manzillar">Turistik manzillar</a></li>
-            <li><a href="/qollanma">Qo'llanma</a></li>
-            <li><a href="/biz-haqimizda">Biz haqimizda</a></li>
-            <li><a href="/biz-bilan-aloqa">Biz bilan aloqa</a></li>
+            <li><Link to="/">Bosh sahifa</Link></li>
+            <li><Link to="/turistik-manzillar">Turistik manzillar</Link></li>
+            <li><Link to="/qollanma">Qo'llanma</Link></li>
+            <li><Link to="/biz-haqimizda">Biz haqimizda</Link></li>
+            <li><Link to="/biz-bilan-aloqa">Biz bilan aloqa</Link></li>
           </ul>
         </div>
 
@@ -30,7 +31,6 @@ const Footer = () => {
             <a href="https://t.me/bootcemp" target="_blank" rel="noopener noreferrer" className="icon telegram">TG</a>
             <a href="https://wa.me/998945048495" target="_blank" rel="noopener noreferrer" className="icon whatsapp">WA</a>
             <a href="mailto:nnuriddin8495@gmail.com?subject=Salom&body=Assalomu alaykum, Nuriddin!" className="icon email">Email</a>
-
           </div>
         </div>
       </div>
